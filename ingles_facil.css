@@ -1,42 +1,26 @@
 body {
-	background-color:rgb(197, 51, 51);
+	background-color:rgb(96, 179, 235);
 	color:rgb(32, 12, 12);
 }
 h1{
 	text-align:center;
-	color:rgb(6, 143, 143);
+	color:rgb(20, 6, 143);
 	font-family:arial,sans serif;
 	font-size:5em;
+	margin: 15px 10px 10px 10px;
+	
 }
-h2{
-	text-align:left;
-	font-family:georgian,sans;
-	font-size:2em;
+.video{
+
 }
 p {
 	color:rgb(60,60,60);
 	font-family:sans serif;
 	text-align:left;
-	font-size:135%;
-}
-.left{
-	position: relative;
-    left: 60px;
-}
-.right{
-	position:absolute;
-	right:140px;
+	font: size 16px;;
 }
 
-table,th,td {
-	border:2px solid blue;
-	text-align:center;
-	font-family:sans;
-	background-color:rgba(160,60,260,1.0);
-}
-a{
-text-decoration:none;
-}
+
 .no-style{ 
 	list-style-type:none; 
 	margin:0;
@@ -45,15 +29,16 @@ text-decoration:none;
 .horizontal li{
 	background-color:rgb(60,100,250);
 	float:left;
-	margin:0em;
-	padding:0em 3.5em 0em 3.5em;
+	margin: 0em 0em 2em 0em;
+	padding:1em 5em 1em 5.5em;
 }
 .horizontal a{
 	margin:0em;
 	color:white;
 	text-align:center;
-	padding:0em 3.5em 0em 3.5em;
-	
+	padding:0em 4em 0em 4em;
+	font-size: 20px;
+	text-decoration: none; 
 }
 .horizontal a:hover,.horizontal a:active{
 	background-color:blue
