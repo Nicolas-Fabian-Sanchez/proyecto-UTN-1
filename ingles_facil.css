@@ -1,12 +1,14 @@
-* { /* el * se usa para dar una orden general los estilos css de la pagina  */
-  box-sizing: border-box;
-  margin: 0; /* para elegir el margen deseado */
-  padding: 0;/*para elegir el relleno del cuerpo deseado */
-}
+   /** {  (el * se usa para dar una orden general los estilos css de la pagina )
+        box-sizing: border-box;
+        margin: 5px;  (para elegir el margen deseado )
+        padding: 0;(para elegir el relleno del cuerpo deseado) }*/
+   
 
 body {
-	background-color:rgb(96, 179, 235); /* dar el fondo a la pantalla ,titulo,texto,etc */
-	color:rgb(32, 12, 12);
+	background-color:rgb(240, 204, 184); /* dar el fondo a la pantalla ,titulo,texto,etc */
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
 }
 h1{
 	text-align:center; /* centrar el texto */
@@ -15,12 +17,13 @@ h1{
 	font-size:5em; /*elegir el tamaño de las letras */
 	margin: 40px 0px ;
 	padding: 80px 20px;
-	background-image: url(../img.ingles_facil/ingles_portada.jpeg);/* para colocar d efondo una imagen*/
+	background-image: url(../img.ingles_facil/banderas.jpeg);/* para colocar de fondo una imagen*/
 	background-size: cover; /* para que la imagen se acomode sola a las medidas de la pantallas*/
 	background-attachment: fixed;/*para que quede fija y haga el efecto que se en en pantalla */
     background-position:35%; 
-	height: 500px;/* establecer el alto del elemento el alto */
+	height: 250px;/* establecer el alto del elemento el alto */
 	text-shadow: 5px 2px black;/*para hacer la sombra a un texto*/
+	display: block;
 	
 }
 .video{
@@ -31,15 +34,28 @@ h1{
 	-5px -5px 10px rgb(231, 13, 231),
 	3px 3px 10px blue;/*para hacer la sombra de elemento , el 3 elemento nos da la claridad de la sombra */
 }
-
-
+img {
+	width: 350px;
+	height: 450px;
+}
+h2{
+	color:red;
+	font-size: 5em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 5px 2px blue;
+}
 p {
 	color:rgb(0, 0, 0);
 	font-family:sans serif;
 	text-align:left;
-	font-size:  20px;;
+	text-shadow: 1px 1px red;
+	font-size:  27px;;
 }
-
+form{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
 
 .no-style{ 
 	list-style-type:none; 
@@ -47,18 +63,23 @@ p {
 	padding:0;
 }
 .horizontal li{
-	background-color:rgb(60,100,250);
+	display: flex;
+	background-image:url(../img.ingles_facil/ingles_portada.jpeg);
+	background-size: cover;
+	background-position:35%; 
 	float:left;
 	margin: 0em 0em 2em 0em; /* em = 16 px */
-	padding:1em 5em 1em 5em;
+	padding:2em 5em 2em 5em;
 }
 .horizontal a{
 	margin:0em;
-	color:white;
+	color:rgb(28, 11, 124);
 	text-align:center;
-	padding:0em 4em 0em 4em; /*para darle mas relleno al cuerpo*/
-	font-size: 20px;
+	padding:0em 2em 0em 2em; /*para darle mas relleno al cuerpo*/
+	font-size: 28px;
 	text-decoration: none; /* para sacarle el subrallado*/
+	background-color: beige;
+	
 }
 .horizontal a:hover,.horizontal a:active{ /* para que cuando el cursor pasa por encima esa palabra cambie de color*/
 	background-color:blue

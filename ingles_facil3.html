@@ -16,6 +16,44 @@
         <li><a href="./ingles_facil3.html">Clases Particulares</a></li>
     </ul>
     <h1>Ingles Facil con JAVI PEYE</h1>
+    <p>Rellene el siguente formulario con su informacion y no espera mas para aprender ingles de una manera facil y sencilla!!!</p>
+    <form action="" method="post">
+         <label for="nombre"> Ingrese su nombre aqui:</label><!--para que el usuario sepa que hacer-->
+         <input type="text" name="nombre_usuario" id="nombre"><!--para que el usuario complete -->
+         <label for="apellido"> Ingrese su apellido aqui:</label>
+         <input type="text" name="apellido_usuario" id="apellido">
+         <label for="email">Ingrese su email aqui: </label>
+         <input type="email"  name="email_usuario" id="email"><!--type="email"para ingresar un mail-->
+         <label for="edad">Ingrese su fecha de nacimiento aqui: </label>
+         <input type="date" name="fecha_nacimiento" id="edad"><!--type="date" para hacer calandario-->
+         <label for="pais_origen">Ingrese su pais de origen aqui: </label><!-- este label solo sirve para hacer referencia a una seccion-->
+         <select name="pais_origen" id="pais_origen"><!--select para hacer una lista deslizable-->
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Peru">Peru</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Panama">Panama</option>
+            <option value="España">España</option>
+            <option value="Mexico">Mexico</option>
+         </select>
+         <label for="pais_origen"> Si su pais de origen no se encuentra en la lista, ingreselo aqui:</label>
+         <input type="text" name="pais_origen" id="pais_origen">
+         <label for="conocimientos">Cuales son sus  conocimientos previos de Ingles :</label>
+         <input type="radio" name="conocimientos" id="conocimientos" value="Ninguno">
+         <label for="conocimientos">Ninguno</label>
+         <input type="radio" name="conocimientos" id="conocimientos" value="Principiante">
+         <label for="conocimientos">Principiante</label>
+         <input type="radio" name="conocimientos" id="conocimientos" value="Intermedio">
+         <label for="conocimientos">Intermedio</label>
+         <input type="radio" name="conocimientos" id="conocimientos" value="Avanzado">
+         <label for="conocimientos">Avanzado</label>
+
+    </form>
     
    
 </html>
