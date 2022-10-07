@@ -15,8 +15,8 @@ h1{
 	color:rgb(235, 18, 18);/* dar color al texto */
 	font-family:arial,sans serif; /* elegir la forma de las letras */
 	font-size:5em; /*elegir el tamaño de las letras */
-	margin: 40px 0px ;
-	padding: 80px 20px;
+	margin: 0px 0px ;
+	padding: 60px 20px;
 	background-image: url(../img.ingles_facil/banderas.jpeg);/* para colocar de fondo una imagen*/
 	background-size: cover; /* para que la imagen se acomode sola a las medidas de la pantallas*/
 	background-attachment: fixed;/*para que quede fija y haga el efecto que se en en pantalla */
