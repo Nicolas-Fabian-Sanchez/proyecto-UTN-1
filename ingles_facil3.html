@@ -7,61 +7,136 @@
     <meta nema="description" content="sitio para aprender el idioma ingles de una manera facil,sencilla y practica."><!--se una para 
     posicionar mejor el sitio en la busquedad-->
     <link rel="stylesheet" href="./ingles_facil.css"><!--para conectar el html con el fichero css de estilo-->
+    <script src="https://kit.fontawesome.com/e1df93d5c0.js" crossorigin="anonymous"></script>
     <title>Ingles Facil</title>
 </head>
 <body>
-    <ul class = "no-style horizontal">
-        <li><a href="./ingles_facil1.html">Quien SOY ?</a></li>
-        <li><a href="./ingles_facil2.html">Curso Gratis</a></li>
-        <li><a href="./ingles_facil3.html">Clases Particulares</a></li>
-    </ul>
-    <h1>Ingles Facil con JAVI PEYE</h1>
-    <p>Rellene el siguente formulario con su informacion y no espera mas para aprender ingles de una manera facil y sencilla!!!</p>
-    <form action="" method="post">
-         <label for="nombre"> Ingrese su nombre aqui:</label><!--para que el usuario sepa que hacer-->
-         <input type="text" name="nombre_usuario" id="nombre"><!--para que el usuario complete -->
-         <label for="apellido"> Ingrese su apellido aqui:</label>
-         <input type="text" name="apellido_usuario" id="apellido">
-         <label for="email">Ingrese su email aqui: </label>
-         <input type="email"  name="email_usuario" id="email"><!--type="email"para ingresar un mail-->
-         <label for="edad">Ingrese su fecha de nacimiento aqui: </label>
-         <input type="date" name="fecha_nacimiento" id="edad"><!--type="date" para hacer calandario-->
-         <label for="pais_origen">Ingrese su pais de origen aqui: </label><!-- este label solo sirve para hacer referencia a una seccion-->
-         <select name="pais_origen" id="pais_origen"><!--select para hacer una lista deslizable-->
-            <option value="Argentina">Argentina</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Chile">Chile</option>
-            <option value="Paraguay">Paraguay</option>
-            <option value="Uruguay">Uruguay</option>
-            <option value="Bolivia">Bolivia</option>
-            <option value="Colombia">Colombia</option>
-            <option value="Peru">Peru</option>
-            <option value="Ecuador">Ecuador</option>
-            <option value="Panama">Panama</option>
-            <option value="España">España</option>
-            <option value="Mexico">Mexico</option>
-         </select>
-         <label for="pais_origen"> Si su pais de origen no se encuentra en la lista, ingreselo aqui:</label>
-         <input type="text" name="pais_origen" id="pais_origen">
-         <label for="conocimientos">Cuales son sus  conocimientos previos de Ingles :</label><!-- conocimientos-->
-         <input type="radio" name="conocimientos" id="conocimientos" value="Ninguno">
-         <label for="conocimientos">Ninguno</label>
-         <input type="radio" name="conocimientos" id="conocimientos" value="Principiante">
-         <label for="conocimientos">Principiante</label>
-         <input type="radio" name="conocimientos" id="conocimientos" value="Intermedio">
-         <label for="conocimientos">Intermedio</label>
-         <input type="radio" name="conocimientos" id="conocimientos" value="Avanzado">
-         <label for="conocimientos">Avanzado</label>
-         <label for="cantidad_clases">Elija la cantidad de clases semanales que desea realizar :</label><!-- clases-->
-         <input type="radio" name="cantidad_clases" id="cantidad_clases" value="2 clases semanales">
-         <label for="conocimientos">2 Clases semanales</label>
-         <input type="radio" name="cantidad_clases" id="cantidad_clases" value="3 clases semanales">
-         <label for="cantidad_clases">3 Clases semanales</label>
-         <input type="radio" name="cantidad_clases" id="cantidad_clases" value="4 clases semanales">
-         <label for="cantidad_clases">4 Clases semanales</label>
-         <label for="horarios">Elija los horarios que podria tomar clases, por favor elija dos como minimo :</label><!--horarios-->
+    <nav>
+        <ul class = "no-style horizontal">
+            <li><a href="./ingles_facil1.html">Quien SOY ?</a></li>
+            <li><a href="./ingles_facil2.html">Curso Gratis</a></li>
+            <li><a href="./ingles_facil3.html">Clases Particulares</a></li>
+        </ul>
+        <div class="menu"> <i class="fa-solid fa-bars "></i></div>
+    </nav>
+    <header>
+        <h1>Ingles Facil con JAVI PEYE</h1>
+        <h4>Rellene el siguente formulario con su informacion y no espera mas para aprender ingles de una manera facil y sencilla!!!</h4>
+    </header>
+    <main>
+         <form action="https://formspree.io/f/mjvzpjgb" method="post" class="grip2">
+            <div>
+             <label for="nombre"> Ingrese su nombre aqui:</label><!--para que el usuario sepa que hacer-->
+             <input type="text" name="nombre_usuario" id="nombre"class="input" required><!--para que el usuario complete -->
+            </div>
+            <div>
+              <label for="apellido"> Ingrese su apellido aqui:</label>
+              <input type="text" name="apellido_usuario" id="apellido" class="input" required>
+            </div>
+            <div>
+              <label for="email">Ingrese su email aqui: </label>
+              <input type="email"  name="email_usuario" id="email"class="input" required><!--type="email"para ingresar un mail-->
+            </div>
+            <div>
+              <label for="edad">Ingrese su fecha de nacimiento aqui: </label>
+              <input type="date" name="fecha_nacimiento" id="edad"><!--type="date" para hacer calandario-->
+            </div>
+            <div>
+              <label for="pais_origen">Ingrese su pais de origen aqui: </label><!-- este label solo sirve para hacer referencia a una seccion-->
+              <select name="pais_origen" id="pais_origen"><!--select para hacer una lista deslizable-->
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Peru">Peru</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Panama">Panama</option>
+                <option value="España">España</option>
+                <option value="Mexico">Mexico</option>
+              </select>
+            </div>
+            <div>
+              <label for="pais_origen"> Si su pais de origen no se encuentra en la lista, ingreselo aqui:</label>
+              <input type="text" name="pais_origen" id="pais_origen"class="input">
+            </div>
+            <label for="conocimientos">Cuales son sus  conocimientos previos de Ingles :</label><!--conocimientos-->
+            <div class="grid2">
+              <label for="conocimientos">
+                <input type="radio" name="conocimientos" id="conocimientos" value="Ninguno"class="input">
+                Ninguno</label>
+              <label for="conocimientos">
+                <input type="radio" name="conocimientos" id="conocimientos" value="Principiante">
+                Principiante</label>
+             <label for="conocimientos">
+              <input type="radio" name="conocimientos" id="conocimientos" value="Intermedio"class="input">
+              Intermedio</label>
+            <label for="conocimientos">
+              <input type="radio" name="conocimientos" id="conocimientos" value="Avanzado"class="input">
+              Avanzado</label>
+            </div>
+            <label for="cantidad_clases">Elija la cantidad de clases semanales que desea realizar :</label><!-- clases-->
+            <div class="grid2">
+              <label for="conocimientos">
+                <input type="radio" name="cantidad_clases" id="cantidad_clases" value="2 clases semanales"class="input">
+                2 Clases semanales</label>
+              <label for="cantidad_clases">
+                <input type="radio" name="cantidad_clases" id="cantidad_clases" value="3 clases semanales"class="input">
+                3 Clases semanales</label>
+              <label for="cantidad_clases">
+                <input type="radio" name="cantidad_clases" id="cantidad_clases" value="4 clases semanales"class="input">
+                4 Clases semanales</label>
+            </div>
+            <label for="horarios">Elija los horarios que podria tomar clases, por favor elija dos como minimo :</label><!--horarios-->
+            <div class="grid2">
+              <label for="horario_1">
+                <input type="checkbox" name="horarios" id="horario_1" value="de 8 a 9 de la mañana"class="input">
+                De 8 a 9  horas A.M 
+              </label>
+              <label for="horario_2">
+                <input type="checkbox" name="horarios" id="horario_2" value="de 9 a 10 de la mañana"class="input">
+                 De 9 a 10 horas A.M
+              </label>
+              <label for="horario_3">
+                <input type="checkbox" name="horarios" id="horario_3" value="de 10 a 11 de la mañana"class="input">
+                De 10 a 11 horas A.M
+              </label>
+              <label for="horario_4">
+                <input type="checkbox" name="horarios" id="horario_4" value="de 15 a 16 de la tarde"class="input">
+                De 15 a 16 horas P.M 
+              </label>
+              <label for="horario_5">
+                <input type="checkbox" name="horarios" id="horario_5" value="de 16 a 17de la tarde "class="input">
+                De 16 a 17 horas P.M
+              </label>
+              <label for="horario_6">
+                <input type="checkbox" name="horarios" id="horario_6" value="de 17 a 18 de la tarde"class="input">
+                De 17  a 18 horas P.M
+              </label>
+              <label for="horario_7">
+                <input type="checkbox" name="horarios" id="horario_7" value="de 18 a 19 de la tarde"class="input">
+                De 18  a 19 horas P.M
+              </label>
+            </div> 
+            <label for="consultas">Si desea realizar alguna consulta mas sobre las clases deje su comentario aqui:</label>
+            <textarea name="consultas" id="consultas" cols="20" rows="5"></textarea>
+            <div class="centro">
+             <input type="submit" value="Enviar">
+            </div>
 
-    </form>
+        </form>
+    </main>
+    <footer>
+        <a href="" class="sectionHabilidades2 icono"><i class="fa-brands fa-square-whatsapp"></i><p class="letra2">+54 9 3406-403356</p></a>
+        <a href="" class="sectionHabilidades2 icono" ><i class="fa-brands fa-instagram"></i><p class="letra">javi_peye</p></a>
+        <a href="" class="sectionHabilidades2 icono"><i class="fa-brands fa-square-facebook"></i><p class="letra">Javier Peye</p></a>
+        </div class="sectionHabilidades2">
+        <p class="icono4">Copyright <i class="fa-solid fa-copyright icono4"></i>2022,All right reservet</p>
+        </div>
+    </footer>
+    <script src="./ingles_facil.js"></script>
     
-   
+</body>
 </html>
