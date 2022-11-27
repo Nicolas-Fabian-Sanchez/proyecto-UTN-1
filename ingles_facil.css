@@ -16,14 +16,20 @@ nav a:hover , a:active{  /*para que cuando el cursor pasa por encima esa palabra
 	background-color: rgb(3, 112, 185);
 	display: flex;
 	flex-direction: row;
+	
+	
 }
-.menu{
+.hamburguer{
 	display: none;
-	font-size: 45px;
 	color: blue;
+	font-size: 3em;
+	
+
 }
+
+
 .mostrar{
-	display: block;
+	display: none;
 }
 
 .grid1{
@@ -49,7 +55,7 @@ nav a:hover , a:active{  /*para que cuando el cursor pasa por encima esa palabra
 h1{
 	text-align:center; /* centrar el texto */
 	color:rgb(235, 18, 18);/* dar color al texto */
-	font-family:arial,sans serif; /* elegir la forma de las letras */
+	font-family:arial; /* elegir la forma de las letras */
 	font-size:5em; /*elegir el tamaño de las letras */
 	margin: 25px 0px ;
 	padding: 60px 20px;
@@ -65,6 +71,7 @@ h1{
 }
 #tamaño{ /* lo hice para ajustar el tamaño del background-image*/
 	height: 458px;
+	
 }
 @keyframes h1 { /*para realizar la animacion*/
 	0% {
@@ -221,19 +228,16 @@ footer{
 	.letra{
 		font-size: 16px;
 	}
-	
-	.icono{
-		font-size: 35px;
-	}
 	.horizontal a {
 		font-size: 20px;
 		padding: 0px;
 		margin-left: 100px;
 	}
-    /*.horizontal li {
-		flex-direction: column;
-		justify-content: center;
-	}*/
+	
+	.icono{
+		font-size: 35px;
+	}
+	
 	nav{
 		flex-direction: column;
 	}
@@ -247,10 +251,22 @@ footer{
 }
 @media(max-width:1120px){
 	ul{
-		display: none;
+		display:none;
 	}
-	.menu{
+	.hamburguer{
 		display:block;
+	}
+	.mostrar{
+		display: block;
+	}
+
+	
+    .horizontal li {
+		flex-direction: column;
+		justify-content: center;
+		float: inline-end;
+		
+		
 	}
 	#carouselExampleControls{
 		display: none;
@@ -303,6 +319,11 @@ footer{
 	.icono4{
 		font-size: 12px;
 	}
+	.horizontal a {
+		font-size: 16px;
+		padding: 0px;
+		margin-left: 0px;
+	}
 }
 @media(max-width:751px){
 	.fot1{
@@ -312,5 +333,12 @@ footer{
 		display:grid;
 		grid-template-columns:repeat(1,1fr);
 		align-items: center;
+	}
+}
+@media(max-width:600px){
+	.horizontal a {
+		font-size: 16px;
+		padding: 0px;
+		margin-left: 75px;
 	}
 }

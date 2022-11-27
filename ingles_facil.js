@@ -1,7 +1,8 @@
 
-let menu = document.querySelector("menu");
+let menuhamburguesa = document.querySelector(".hamburguer");
 let listaDesplegable = document.querySelector("ul");
 
-menu.addEventListener("click",()=>{
+menuhamburguesa.addEventListener("click",()=>{
+    console.log("me hicieorn click")
     listaDesplegable.classList.toggle("mostrar");
 })
