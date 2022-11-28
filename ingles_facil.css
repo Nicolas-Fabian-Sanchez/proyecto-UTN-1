@@ -55,7 +55,7 @@ nav a:hover , a:active{  /*para que cuando el cursor pasa por encima esa palabra
 h1{
 	text-align:center; /* centrar el texto */
 	color:rgb(235, 18, 18);/* dar color al texto */
-	font-family:arial; /* elegir la forma de las letras */
+	font-family:Helvetica; /* elegir la forma de las letras */
 	font-size:5em; /*elegir el tamaño de las letras */
 	margin: 25px 0px ;
 	padding: 60px 20px;
