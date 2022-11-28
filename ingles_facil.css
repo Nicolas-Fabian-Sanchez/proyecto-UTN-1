@@ -294,6 +294,11 @@ footer{
 		width: 250px;
 		height: 420px;
 	}
+	.horizontal a {
+		font-size: 16px;
+		padding: 0px;
+		margin-left: 0px;
+	}
 	
 	
 	
